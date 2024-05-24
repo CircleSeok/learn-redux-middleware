@@ -2,7 +2,7 @@
 // 한 요청당 세 개를 만듬
 
 import { handleAction, handleActions } from 'redux-actions';
-
+import * as api from '../lib/api';
 const GET_POST = 'sample/GET_POST';
 const GET_POST_SUCCESS = 'sample/GET_POST_SUCCESS';
 const GET_POST_FAILURE = 'sample/GET_POST_FAILURE';
@@ -111,3 +111,4 @@ const sample = handleActions(
   },
   initialState
 );
+export default sample;
