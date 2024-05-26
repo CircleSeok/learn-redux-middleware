@@ -1,3 +1,5 @@
+import React from 'react';
+
 const Sample = ({ loadingPost, loadingUsers, post, users }) => {
   return (
     <div>
@@ -17,7 +19,7 @@ const Sample = ({ loadingPost, loadingUsers, post, users }) => {
         {loadingUsers && '로딩 중...'}
         {!loadingUsers && users && (
           <ul>
-            {users.mpa((user) => (
+            {users.map((user) => (
               <li key={user.id}>
                 {user.username} ({user.email})
               </li>
