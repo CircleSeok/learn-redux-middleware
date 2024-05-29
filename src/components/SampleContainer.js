@@ -13,7 +13,7 @@ const SampleContainer = ({
   loadingUsers,
 }) => {
   useEffect(() => {
-    const fn = async () => {
+    const fn = async (e) => {
       try {
         await getPost(1);
         await getUsers(1);

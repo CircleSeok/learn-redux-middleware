@@ -1,7 +1,8 @@
 import { combineReducers } from 'redux';
-import counter from './counter';
+import counter, { counterSaga } from './counter';
 import sample from './sample';
 import loading from './loding';
+import { all } from 'axios';
 
 const rootReducer = combineReducers({
   counter,
