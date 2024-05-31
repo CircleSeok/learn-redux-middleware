@@ -6,7 +6,7 @@ import SampleContainer from './components/SampleContainer';
 function App() {
   return (
     <div>
-      <CounterContainer />
+      <SampleContainer />
     </div>
   );
 }
